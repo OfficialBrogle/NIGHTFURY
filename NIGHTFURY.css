@@ -22,19 +22,19 @@ body {
 
 /*CONTACT*/
 
-.container::before,
-.group::before,
-.menu::before,
-.container::after,
-.group::after,
-.menu::after {
+.container:before,
+.group:before,
+.menu:before,
+.container:after,
+.group:after,
+.menu:after {
     content: " ";
     display: table;
 }
 
-.container::after,
-.goup::after,
-.menu::after {
+.container:after,
+.group:after,
+.menu:after {
     clear: both;
 }
 
@@ -84,48 +84,56 @@ strong {
 
 .contact-bar {
     background: #39a3d4;
-    height: 84px;
-    font-size: 14px;
+    /* height: 84px; */
+    font-size: 0.875em;
+    /* 14/16*/
 }
 
 .personal {
-    margin-top: 29px;
+    margin: 2em 0;
+    /* 29/14*/
     float: left;
 }
 
 .social {
     float: right;
-    padding-top: 17px;
+    margin: 1.2857142857142858em 0;
+    /* 18/14 */
 }
 
-.personal li {
-    margin-right: 70px;
+.personal li:first-child {
+    margin-right: 5em;
+    /*70/14*/
 }
 
 .personal .fab,
 .personal .fas {
-    font-size: 28px;
-    margin-right: 5px;
+    font-size: 2em;
+    /* 28/14*/
+    margin-right: 0.35714285714285715em;
+    /* 5/14/ */
 }
 
 .social .fab {
-    font-size: 17px;
+    font-size: 1.2142857142857142em;
+    /* 17/14*/
 }
 
 .social-icon {
     display: block;
-    width: 48px;
-    height: 48px;
-    line-height: 46px;
+    width: 3.428571428571429em;
+    /*48/14*/
+    height: 3.428571428571429em;
+    /*48/14*/
+    line-height: 3.285714285714286;
+    /*46/14*/
     color: #989898;
     background: #eeefed;
     text-align: center;
-    border-radius: 2px;
-    margin-left: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+    border-radius: 0.1428571428571429em;
+    /* 2/14 */
+    margin-left: 0.1428571428571429em;
+    /* 2/14 */
 }
 
 .social-icon:hover,
@@ -143,30 +151,34 @@ strong {
 
 .logo {
     float: left;
+    margin: 1.24em 0
 }
 
 .logo a {
     display: block;
-    background: url(../Pokemoni/ostatní/logo.png) 0 0 no-repeat;
-    background-size: 100px 100px;
-    width: 156px;
-    height: 186px;
-    text-indent: -9999px;
-    margin-top: -8px;
+    color: #de5728;
+    letter-spacing: -0.035em;
+}
+
+.logo strong {
+    color: #323232;
+}
+
+.logo .fas {
+    position: relative;
 }
 
 .navigation {
-    float: right
+    float: right;
 }
 
 .navigation .fas {
     display: block;
     padding-bottom: 10px;
-    padding-top: 28px;
 }
 
 .navigation li {
-    border-left: 1px solid #cecece
+    border-left: 1px solid #cecece;
 }
 
 .navigation li:last-child {
@@ -176,10 +188,12 @@ strong {
 .navigation a {
     color: #a6a6a6;
     display: block;
-    width: 136px;
-    height: 120px;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
+    padding: 1.85em 0;
+    width: 8.5em;
+    /*136/16*/
 }
 
 
@@ -200,50 +214,61 @@ strong {
 
 .post-header {
     background: url("../Pokemoni/ostatní/background.png") center -687px no-repeat;
-    height: 166px;
-    background-size: 1405px auto
+    background-size: 87.813em auto
 }
 
 .post-title {
     color: white;
-    font-size: 45px;
+    font-size: 2.813em;
+    /*45/16*/
     font-weight: 600;
     background: #de5728;
-    padding: 18px 46px;
-    border-radius: 7px;
+    padding: 0.4em 1.02222222222em;
+    /*45/18 46*/
+    border-radius: 0.55555555555em;
+    /*45/7*/
     display: inline-block;
     text-transform: uppercase;
-    letter-spacing: -2px;
-    margin-top: 36px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    -o-border-radius: 7px;
+    letter-spacing: -0.044444em;
+    /*45/-2*/
+    margin-top: 0.8em 0;
+    /*45/36*/
 }
 
 .post-content {
-    padding-bottom: 150px;
+    padding: 4em 0 8em;
 }
 
 .post-content h2 {
     font-weight: 400;
     color: #323232;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 1.875em;
+    line-height: 1.4em;
+    /*42/30*/
+    margin-top: 0;
 }
 
 .controls {
-    width: 642px;
-    margin: 50px auto;
+    margin: 3.125em auto;
+    /* 50/16 */
     text-align: center;
 }
 
+.controls li {
+    float: none;
+    display: inline-block;
+}
+
 .controls a {
+    font-size: 1.375em;
+    /* 22/16 */
     font-weight: 300;
     color: #39a3d4;
     text-transform: uppercase;
-    padding: 0 25px;
-    line-height: 48px;
+    padding: 0 1.136363636363636em;
+    /*25/22*/
+    line-height: 2.181818181818182em;
+    /*48/22*/
     display: block;
 }
 
@@ -252,11 +277,8 @@ strong {
 .controls .selected a {
     background: #39a3d4;
     color: white;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 0.1818181818181818em;
+    /* 4/22 */
 }
 
 .gallery img {
@@ -277,43 +299,50 @@ strong {
 }
 
 .pre-footer .container {
-    width: 460px;
-    padding: 40px 0 60px 0;
+    /* width: 460px; */
+    padding: 2.5em 0 3.75em 0;
+    /* 48/16 60/16*/
 }
 
 .pre-footer p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 26px;
     text-transform: uppercase;
 }
 
+.pre-footer .personal {
+    width: 100%;
+    margin: 1.5em 0 0;
+}
+
+.pre-footer li {
+    float: none;
+    display: inline-block;
+}
+
 .pre-footer strong {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
     text-transform: none;
-}
-
-.pre-footer .personal li {
-    margin-right: 0;
-}
-
-.pre-footer .personal li:first-child {
-    margin-right: 60px;
+    display: block;
 }
 
 footer {
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
-footer .container {
-    background: url("../Pokemoni/ostatní/logo.png") left center no-repeat;
-    background-size: 65px 65px;
+footer .logo {
+    color: #de5728;
+    font-size: 2.285714285714286em;
+    /*32px/14*/
+    margin: 0.66em;
+    margin-left: 0;
 }
 
 footer p {
     color: #a6a6a6;
     float: left;
-    padding-left: 200px;
+    /* padding-left: 200px; */
 }
 
 f footer p a {
@@ -323,7 +352,8 @@ f footer p a {
 
 footer p,
 footer .menu {
-    margin: 32px 0 32px 0;
+    margin: 2.285714285714286em 0 2.285714285714286em 0;
+    /*32/14*/
 }
 
 footer .menu {
@@ -345,7 +375,7 @@ footer .menu a:hover {
 footer .menu li:after {
     color: #989898;
     content: "/";
-    margin: 0 8px
+    margin: 0 0.5714285714285714em/*8/14*/
 }
 
 footer .menu li:last-child:after {
