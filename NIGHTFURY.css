@@ -244,6 +244,12 @@ img {
     /*45/36*/
 }
 
+.post-title:hover {
+    transform: skewX(30deg) rotate(15deg)/*zešikmí se a diagonálně zkroutí*/
+    ;
+    transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
 .post-content {
     padding: 4em 0 8em;
 }
@@ -289,7 +295,7 @@ img {
 
 .controls a {
     font-size: 1.375em;
-    /* 22/16 */
+    /*22/16*/
     font-weight: 300;
     color: #39a3d4;
     text-transform: uppercase;
@@ -298,6 +304,7 @@ img {
     line-height: 2.181818181818182em;
     /*48/22*/
     display: block;
+    transition: all 0.5s ease;
 }
 
 .controls a:hover,
@@ -311,7 +318,13 @@ img {
 
 .gallery img {
     width: 33.333333333%;
-    height: auto;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+    transform: scale(1.05);
+    /*obrázek se zvětší*/
+    transition: all .5s ease;
 }
 
 .gallery {
@@ -467,9 +480,6 @@ footer .menu li:last-child:after {
 }
 
 @media (max-width: 605px) {
-    .contact-bar {
-        /* font-size: 70%; */
-    }
     .personal {
         width: auto;
     }
