@@ -257,10 +257,29 @@ img {
     margin-top: 0;
 }
 
-.controls {
+.controls,
+.menu-dropdown {
     margin: 3.125em auto;
     /* 50/16 */
     text-align: center;
+}
+
+.menu-dropdown {
+    display: none;
+    margin: 2em 0 2.5em;
+    font-size: 1.3em;
+}
+
+.menu-dropdown select {
+    color: #fff;
+    background: #39a3d4;
+    border: 1px solid #1990c8;
+    border-radius: 0.3em;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.4em;
+    padding: 0 0.5em;
+    cursor: pointer;
 }
 
 .controls li {
@@ -465,6 +484,12 @@ footer .menu li:last-child:after {
     }
     footer .logo {
         margin-left: 11%;
+    }
+    .controls {
+        display: none;
+    }
+    .menu-dropdown {
+        display: block
     }
 }
 

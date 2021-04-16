@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="C:\Users\BARBORA\Documents\Práce\Programování\yablko\NIGHTFURY\NIGHTFURY.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <! - [if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -95,15 +96,24 @@
                     <h2 clas="text-center">
                         Tootsie roll jelly beans macaroon. Lollipop ice cream jelly beans chocolate sesame snaps icing lemon drops icing. Caramels ice cream danish dessert. Soufflé jelly beans marzipan jelly-o toffee sweet roll tootsie roll chupa chups. </h2>
 
+
                     <ul class="menu controls">
-                        <li class="selected"><a href="#">Všechno</a> </li>
-                        <li><a href="#">Web</a> </li>
-                        <li><a href="#">Branding</a> </li>
-                        <li><a href="#">Fotografie</a> </li>
-                        <li><a href="#">Video</a> </li>
+                        <li class="selected"><a href="index.html">Všechno</a> </li>
+                        <li><a href="web.html">Web</a> </li>
+                        <li><a href="branding.html">Branding</a> </li>
+                        <li><a href="fotografie.html">Fotografie</a> </li>
+                        <li><a href="video.html">Video</a> </li>
                     </ul>
 
-
+                    <form class="menu-dropdown">
+                        <select onchange="location = this.options[this.selectedIndex].value;"> <!--JS - díky tomu bude selektor fungovat-->
+                        <select>
+                            <option value="web.html">Web</option>
+                            <option value="branding.html">Branding</option>
+                            <option value="fotografie.html">Fotografie</option>
+                            <option value="video.html">Video</option>
+                        </select>
+                    </form>
 
                 </div>
                 <section class="gallery">
